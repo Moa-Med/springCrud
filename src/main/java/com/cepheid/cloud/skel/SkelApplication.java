@@ -20,6 +20,7 @@ public class SkelApplication {
     SpringApplication.run(SkelApplication.class, args);
   }
 
+  /*
   @Bean
   ApplicationRunner initItems(ItemRepository repository) {
     return args -> {
@@ -30,6 +31,6 @@ public class SkelApplication {
           });
       repository.findAll().forEach(System.out::println);
     };
-  }
+  }*/
 
 }
