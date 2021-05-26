@@ -42,18 +42,18 @@ public class ItemController {
     return id+" Test bravo ";
   }
 
-  @POST
+  @GET
   @Produces(MediaType.APPLICATION_JSON)
   @Path("")
   @Transactional(readOnly = true, propagation = Propagation.REQUIRED)
-  public String createItem(int id) {
-    return id+" Test bravo ";
+  public String createItem() {
+    return " Test Mooh ";
   }
 
-  @PostMapping("/products")
+  /*@PostMapping("/products")
   public ResponseEntity<Product> createProduct(@RequestBody Product product){
     return ResponseEntity.ok().body(this.productService.createProduct(product));
-  }
+  }*/
 
 
 
